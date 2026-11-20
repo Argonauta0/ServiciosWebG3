@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<TabPane prefHeight="570.0" prefWidth="950.0"
+         tabClosingPolicy="UNAVAILABLE"
+         xmlns="http://javafx.com/javafx/17.0.12"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+    <Tab text="Usuarios (JSONPlaceholder)">
+        <fx:include source="usuarios-view.fxml" />
+    </Tab>
+
+    <Tab text="Clientes (Supabase)">
+        <fx:include source="clientes-view.fxml" />
+    </Tab>
+
+</TabPane>

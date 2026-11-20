@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_LEFT"
+      prefHeight="537.0" prefWidth="950.0"
+      spacing="15.0"
+      xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ni.edu.uam.g3.controller.ClienteController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="Consulta de clientes - Supabase REST">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Button fx:id="btnConsultar"
+                mnemonicParsing="false"
+                text="Consultar clientes"
+                onAction="#consultarClientes" />
+        <Label fx:id="lblEstado" text="Presione Consultar clientes" />
+    </HBox>
+
+    <TableView fx:id="tblClientes" prefHeight="420.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="colNombre" prefWidth="140.0" text="Nombre" />
+            <TableColumn fx:id="colCorreo" prefWidth="170.0" text="Correo" />
+            <TableColumn fx:id="colTelefono" prefWidth="115.0" text="Teléfono" />
+            <TableColumn fx:id="colPais" prefWidth="85.0" text="País" />
+            <TableColumn fx:id="colCiudad" prefWidth="95.0" text="Ciudad" />
+            <TableColumn fx:id="colIngreso" prefWidth="105.0" text="Ingreso Anual" />
+            <TableColumn fx:id="colScore" prefWidth="70.0" text="Score" />
+            <TableColumn fx:id="colEstado" prefWidth="75.0" text="Estado" />
+        </columns>
+        <placeholder>
+            <Label text="Tabla sin contenido" />
+        </placeholder>
+    </TableView>
+
+</VBox>
